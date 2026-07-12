@@ -55,6 +55,11 @@ header {
     background-size: 1500px;
 }
 
+#cliffs header {
+    background: no-repeat lightgrey url(images/cliff_yosemite.jpg);
+    background-size: 1500px;
+}
+
 .main-header {
     background-color: rgba(255, 255, 255, 0.8);
     width: 700px;
@@ -107,6 +112,10 @@ main {
     padding: 2rem 2rem 3rem;
 }
 
+.cliffs-main {
+    padding: 2.5rem 2rem 3rem;
+}
+
 .home-main {
     padding: 2.5rem 2rem 3rem;
 }
@@ -119,6 +128,33 @@ main h1 {
 
 main p {
     margin-bottom: 1rem;
+}
+
+.cliff-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(240px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.cliff-card {
+    border: 1px solid #ddd;
+    background: #fff;
+    overflow: hidden;
+}
+
+.cliff-card h2 {
+    background: #852B1B;
+    color: #fff;
+    padding: 0.75rem 1rem;
+    font-size: 1.1rem;
+}
+
+.cliff-card img {
+    display: block;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
 }
 
 .intro-block {
@@ -290,10 +326,12 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 1rem;
 }
 
 .footer-copy p {
-    margin: 0;
+    margin: 0 0 0.35rem;
+    line-height: 1.4;
 }
 
 .social-links {
