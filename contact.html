@@ -26,12 +26,13 @@
         </header>
 
         <main class="contact-main">
-            <h1>Contact Great Cliffs</h1>
-            <p>Questions about planning your adventure? Reach out and we will help you get started.</p>
+            <h1>Contacting Us</h1>
+            <p><strong>Phone:</strong> (800)GCLIFFS</p>
+            <p><strong>Email:</strong> info@greatcliffs.com</p>
 
             <form action="/contact" method="post">
                 <fieldset>
-                    <legend>Contact information</legend>
+                    <legend>Contact Form</legend>
                     <label for="name">Name</label>
                     <input type="text" id="name" name="name">
 
@@ -41,16 +42,24 @@
                     <label for="phone">Phone</label>
                     <input type="text" id="phone" name="phone">
 
-                    <label for="contact-method">Preferred contact method</label>
-                    <select id="contact-method" name="contact-method">
-                        <option>Email</option>
-                        <option>Phone</option>
+                    <label>How should we contact you?</label>
+                    <div class="radio-group">
+                        <label class="radio-option"><input type="radio" name="contact-preference" value="email">Email</label>
+                        <label class="radio-option"><input type="radio" name="contact-preference" value="phone">Phone</label>
+                    </div>
+
+                    <label for="cliff">Which Cliff are you inquiring?</label>
+                    <select id="cliff" name="cliff">
+                        <option>West Cliff</option>
+                        <option>North Cliff</option>
+                        <option>East Cliff</option>
+                        <option>South Cliff</option>
                     </select>
 
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message"></textarea>
+                    <label for="source">How did you hear about us</label>
+                    <textarea id="source" name="source"></textarea>
 
-                    <button type="submit">Send</button>
+                    <button type="submit">Inquire</button>
                 </fieldset>
             </form>
         </main>
@@ -62,11 +71,20 @@
                 <div class="partner-item"><img src="images/partners/partner2.png" alt="Partner 2"></div>
                 <div class="partner-item"><img src="images/partners/partner3.png" alt="Partner 3"></div>
                 <div class="partner-item"><img src="images/partners/partner4.png" alt="Partner 4"></div>
+                <div class="partner-item"><img src="images/partners/partner1.svg" alt="Partner 5"></div>
+                <div class="partner-item"><img src="images/partners/partner2.svg" alt="Partner 6"></div>
             </div>
         </section>
 
         <footer>
-            <p>Copyright © 2020 GreatCliffs.com</p>
+            <div class="footer-copy">
+                <p>© Copyright 2020 :: GreatCliffs.com</p>
+            </div>
+            <div class="social-links" aria-label="Social links">
+                <span class="social-icon">f</span>
+                <span class="social-icon">in</span>
+                <span class="social-icon">t</span>
+            </div>
         </footer>
     </div>
 </body>
