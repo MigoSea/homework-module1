@@ -4,137 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Great Cliffs Home</title>
-    <style>
-      /* Header */
-      body {
-        margin: 0;
-        font-family: Arial, Helvetica, sans-serif;
-      }
-
-      #container {
-        width: 100%;
-        max-width: 1200px;
-        margin: 0 auto;
-      }
-
-      header {
-        width: 100%;
-        min-height: 400px;
-        padding-top: 3em;
-      }
-
-      #home header {
-        background: no-repeat lightgrey url(images/cliff_ocean.jpg);
-        background-size: 1500px;
-      }
-
-      .main-header {
-        background-color: rgba(255, 255, 255, 0.8);
-        width: 700px;
-        margin: 2em auto 0 auto;
-        min-height: 100px;
-        height: 100px;
-      }
-
-      .main-header .logo img {
-        width: 100px;
-        height: 100px;
-        float: left;
-        margin-right: 1em;
-      }
-
-      .main-header h1 {
-        margin: 0;
-        padding-top: 1.2em;
-        color: #333;
-      }
-
-      /* Navigation */
-      nav {
-        background-color: #666;
-        text-align: center;
-        padding: 0.75em 0;
-      }
-
-      .main-menu ul {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        display: flex;
-        justify-content: center;
-        gap: 1rem;
-      }
-
-      .main-menu ul li {
-        display: inline-block;
-        text-transform: uppercase;
-      }
-
-      .main-menu ul li a {
-        padding: 0.75em 1em;
-        text-decoration: none;
-        color: #fff;
-        display: inline-block;
-        transition: background-color 0.3s ease, color 0.3s ease;
-      }
-
-      .main-menu ul li a:hover {
-        color: #000;
-        background-color: #ddd;
-      }
-
-      .main-menu ul li.active {
-        background-color: #9ed034;
-      }
-
-      .main-menu ul li.active a {
-        color: white;
-        background-color: #9ed034;
-      }
-
-      /* Main */
-      main {
-        padding: 2rem 1.25rem;
-        font-family: Arial, Helvetica, sans-serif;
-      }
-
-      main h1 {
-        color: #9ed034;
-        font-family: Arial, Helvetica, sans-serif;
-      }
-
-      /* Partners */
-      .partners {
-        padding: 2rem 1.25rem;
-        text-align: center;
-      }
-
-      .partners h2 {
-        color: #9ed034;
-      }
-
-      .partner-logos {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 1rem;
-        margin-top: 1rem;
-      }
-
-      .partners img {
-        margin: 0.5rem;
-        max-height: 100px;
-        width: auto;
-      }
-
-      /* Footer */
-      footer {
-        background-color: black;
-        text-align: center;
-        padding: 1.25rem 0;
-        color: white;
-      }
-    </style>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body id="home">
     <div id="container">
@@ -158,21 +28,25 @@
       </nav>
 
       <main>
-        <h1>Welcome to Great Cliffs</h1>
-        <p>
-          Great Cliffs offers amazing outdoor experiences including hiking,
-          biking, camping, kayaking, and more. Explore our activities and enjoy
-          nature at its best.
-        </p>
+        <div class="main-content">
+          <h1>Introducing California's Greatest Cliffs</h1>
+          <p>
+            What is so unique about West Cliff? How are the cliffs different from the others? Why is West Cliff considered the greatest cliff of all of them? It is because it is not just the highest cliff but also the most accessible cliff for visitors and hikers.
+          </p>
+          <h2>West Cliff</h2>
+          <p>
+            The west cliff is the most popular and most visited site for hiking and sightseeing. It offers trails, viewpoints, and scenic vistas that attract visitors year-round.
+          </p>
+        </div>
       </main>
 
       <section class="partners">
         <h2>Our Partners</h2>
         <div class="partner-logos">
-          <img src="images/partners/partner1.png" alt="Partner 1" />
-          <img src="images/partners/partner2.png" alt="Partner 2" />
-          <img src="images/partners/partner3.png" alt="Partner 3" />
-          <img src="images/partners/partner4.png" alt="Partner 4" />
+          <div class="partner-item"><img src="images/partners/partner1.svg" alt="Partner 1" /></div>
+          <div class="partner-item"><img src="images/partners/partner2.svg" alt="Partner 2" /></div>
+          <div class="partner-item"><img src="images/partners/partner3.svg" alt="Partner 3" /></div>
+          <div class="partner-item"><img src="images/partners/partner4.svg" alt="Partner 4" /></div>
         </div>
       </section>
 
