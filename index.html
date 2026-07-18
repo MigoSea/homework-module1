@@ -65,5 +65,23 @@
             </div>
         </footer>
     </div>
+    <script>
+        // Build the current Irvine, USA time string and update the clock display.
+        function currentTime() {
+            const now = new Date();
+            const timeString = now.toLocaleTimeString('en-US', {
+                timeZone: 'America/Los_Angeles',
+                hour: 'numeric',
+                minute: '2-digit',
+                second: '2-digit',
+                hour12: true
+            });
+
+            document.getElementById('clock').innerText = timeString;
+        }
+
+        currentTime();
+        setInterval(currentTime, 1000);
+    </script>
 </body>
 </html>
