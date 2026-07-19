@@ -82,14 +82,16 @@
 
         <section class="partners">
             <h2>Partners</h2>
-            <div class="partner-logos">
-                <div class="partner-item"><img src="images/partners/partner1.png" alt="Partner 1"></div>
-                <div class="partner-item"><img src="images/partners/partner2.png" alt="Partner 2"></div>
-                <div class="partner-item"><img src="images/partners/partner3.png" alt="Partner 3"></div>
-                <div class="partner-item"><img src="images/partners/partner4.png" alt="Partner 4"></div>
-                <div class="partner-item"><img src="images/partners/partner1.svg" alt="Partner 5"></div>
-                <div class="partner-item"><img src="images/partners/partner2.svg" alt="Partner 6"></div>
-            </div>
+            <ul id="partners" class="partner-logos">
+                <!--
+                <li class="partner partner-item"><img src="images/partners/partner1.png" alt="Partner 1"></li>
+                <li class="partner partner-item"><img src="images/partners/partner2.png" alt="Partner 2"></li>
+                <li class="partner partner-item"><img src="images/partners/partner3.png" alt="Partner 3"></li>
+                <li class="partner partner-item"><img src="images/partners/partner4.png" alt="Partner 4"></li>
+                <li class="partner partner-item"><img src="images/partners/partner1.svg" alt="Partner 5"></li>
+                <li class="partner partner-item"><img src="images/partners/partner2.svg" alt="Partner 6"></li>
+                -->
+            </ul>
         </section>
 
         <footer>
@@ -102,6 +104,38 @@
                 <span class="social-icon">t</span>
             </div>
         </footer>
+    </div>
+    <script>
+        var partnerFiles = [
+            "partner1.png",
+            "partner2.png",
+            "partner3.png",
+            "partner4.png",
+            "partner1.svg",
+            "partner2.svg"
+        ];
+
+        var partnerAltText = [
+            "Partner 1",
+            "Partner 2",
+            "Partner 3",
+            "Partner 4",
+            "Partner 5",
+            "Partner 6"
+        ];
+
+        var partnerList = [];
+
+        for (var i = 0; i < partnerFiles.length; i++) {
+            partnerList.push(
+                '<li class="partner partner-item">' +
+                    '<img src="images/partners/' + partnerFiles[i] + '" alt="' + partnerAltText[i] + '">' +
+                '</li>'
+            );
+        }
+
+        document.getElementById("partners").innerHTML = partnerList.join("");
+    </script>
     </div>
 </body>
 </html>
